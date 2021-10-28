@@ -23,7 +23,6 @@ const bounce = el => {
 	let top = rect.y
 
 	if (left + rect.width >= width || left <= 0) el.velocityX = -el.velocityX
-
 	if (top + rect.height >= height || top <= 0) el.velocityY = -el.velocityY
 
 	el.style.left = rect.x + el.velocityX + 'px'
