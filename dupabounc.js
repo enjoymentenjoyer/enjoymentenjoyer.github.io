@@ -35,6 +35,11 @@ const frame = () => {
 	window.requestAnimationFrame(frame)
 }
 
+if ((new URLSearchParams(window.location.search)).has('gay')) {
+	document.querySelector('body').style.background =
+		'linear-gradient(#e74d5c, #ec7d6d, #f6bf71, #47ed8d, #3ec0d4, #746de8';
+}
+
 reset()
 
 window.addEventListener('resize', reset)
